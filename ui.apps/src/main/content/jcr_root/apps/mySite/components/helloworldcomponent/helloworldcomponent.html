@@ -2,8 +2,9 @@
 </sly>
 <div class="cmp-helloworld" data-cmp-is="helloworld">
     <h2 class="cmp-helloworld__title">${properties.titleText}</h2>
-    <div class="cmp-helloworld__item">
-        <p class="cmp-helloworld__item-label">${properties.subtitleText}</p>
-        <pre class="cmp-helloworld__item-output"data-cmp-hook-helloworld>${properties.descriptionText}<b>${properties.additionalText}</b></pre>
-    </div>
+    <p class="cmp-helloworld__item-label">${properties.subtitleText}</p>
+    <pre class="cmp-helloworld__item-output" data-cmp-hook-helloworld>${properties.descriptionText}
+       <a href="${properties.linkURL}"><b>${properties.additionalText}</b>
+</a>
+    </pre>
 </div>
