@@ -13,9 +13,11 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">${properties.dropdownLabel}</a>
-                    <div data-sly-list="${resource.children}" class="dropdown-menu" aria-labelledby="dropdown04">
-                        <sly data-sly-list="${item.children}">
-                            <a class="dropdown-item" href="${item.link}">${item.linkLabel}</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown04">
+                        <sly data-sly-list="${resource.children}">
+                            <sly data-sly-list="${item.children}">
+                                <a class="dropdown-item" href="${item.link}">${item.linkLabel}</a>
+                            </sly>
                         </sly>
                     </div>
                 </li>
