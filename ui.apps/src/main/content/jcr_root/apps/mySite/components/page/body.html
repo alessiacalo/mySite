@@ -1,5 +1,7 @@
 <main>
 
     <sly data-sly-resource="${'root' @ resourceType='wcm/foundation/components/responsivegrid'}"></sly>
-
 </main>
+<div data-sly-use.model="com.mySite.core.models.HomePageModel">
+    <span>${model.message}</span>
+</div>
