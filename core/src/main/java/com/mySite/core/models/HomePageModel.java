@@ -59,6 +59,13 @@ public class HomePageModel {
         return previousTitle;
     }
 
+    public String getPreviousTitleTwo() {
+        return previousTitle;
+    }
+
+    public String getPreviousTitleThree() {
+        return previousTitle;
+    }
     public String getMessage() {
         return message;
     }
